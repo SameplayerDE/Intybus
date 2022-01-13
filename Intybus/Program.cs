@@ -2,11 +2,14 @@
 
 namespace Intybus
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        [STAThread]
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // ReSharper disable once HeapView.ObjectAllocation.Evident
+            using var game = new IntybusGame();
+            game.Run();
         }
     }
 }
