@@ -1,27 +1,19 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Cichorium;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using PrimitiveExpander;
 
 namespace Intybus
 {
-    public class IntybusGame : Game
+    public class IntybusGame : Engine
     {
         public SpriteBatch SpriteBatch;
-        public GraphicsDeviceManager GraphicsDeviceManager;
         
         private Vector3 _offset;
 
         public IntybusGame()
         {
-            // ReSharper disable once HeapView.ObjectAllocation.Evident
-            GraphicsDeviceManager = new GraphicsDeviceManager(this);
-
-            if (GraphicsDevice == null)
-            {
-                GraphicsDeviceManager.ApplyChanges();
-            }
-
             // ReSharper disable once HeapView.ObjectAllocation.Evident
             SpriteBatch = new SpriteBatch(GraphicsDevice);
         }

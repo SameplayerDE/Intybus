@@ -11,4 +11,10 @@
       <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="Cichorium, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\Cichorium\Cichorium\bin\Debug\netcoreapp3.1\Cichorium.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>
